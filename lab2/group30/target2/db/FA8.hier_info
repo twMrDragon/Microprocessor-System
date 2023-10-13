@@ -1,0 +1,359 @@
+|FA8
+A[7] => fullAdd:stage7.x
+A[6] => fullAdd:stage6.x
+A[5] => fullAdd:stage5.x
+A[4] => fullAdd:stage4.x
+A[3] => fullAdd:stage3.x
+A[2] => fullAdd:stage2.x
+A[1] => fullAdd:stage1.x
+A[0] => fullAdd:stage0.x
+B[7] => fullAdd:stage7.y
+B[6] => fullAdd:stage6.y
+B[5] => fullAdd:stage5.y
+B[4] => fullAdd:stage4.y
+B[3] => fullAdd:stage3.y
+B[2] => fullAdd:stage2.y
+B[1] => fullAdd:stage1.y
+B[0] => fullAdd:stage0.y
+hex0[0] <= hex:hexStage.a1
+hex0[1] <= hex:hexStage.b1
+hex0[2] <= hex:hexStage.c1
+hex0[3] <= hex:hexStage.d1
+hex0[4] <= hex:hexStage.e1
+hex0[5] <= hex:hexStage.f1
+hex0[6] <= hex:hexStage.g1
+hex1[0] <= hex:hexStage.a2
+hex1[1] <= hex:hexStage.b2
+hex1[2] <= hex:hexStage.c2
+hex1[3] <= hex:hexStage.d2
+hex1[4] <= hex:hexStage.e2
+hex1[5] <= hex:hexStage.f2
+hex1[6] <= hex:hexStage.g2
+Cout <= fullAdd:stage7.Cout
+
+
+|FA8|fullAdd:stage0
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FA8|fullAdd:stage1
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FA8|fullAdd:stage2
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FA8|fullAdd:stage3
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FA8|fullAdd:stage4
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FA8|fullAdd:stage5
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FA8|fullAdd:stage6
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FA8|fullAdd:stage7
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FA8|fullAdd:stage8
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FA8|fullAdd:stage9
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FA8|fullAdd:stage10
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FA8|fullAdd:stage11
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FA8|fullAdd:stage12
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FA8|fullAdd:stage13
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FA8|fullAdd:stage14
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FA8|fullAdd:stage15
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FA8|hex:hexStage
+sw0 => a1.IN0
+sw0 => a1.IN0
+sw0 => b1.IN0
+sw0 => a1.IN0
+sw0 => b1.IN0
+sw0 => e1.IN0
+sw0 => f1.IN0
+sw1 => a1.IN0
+sw1 => a1.IN1
+sw1 => b1.IN1
+sw1 => b1.IN0
+sw1 => a1.IN1
+sw1 => a1.IN1
+sw1 => d1.IN0
+sw2 => a1.IN1
+sw2 => b1.IN1
+sw2 => b1.IN1
+sw2 => c1.IN1
+sw2 => c1.IN1
+sw2 => f1.IN1
+sw2 => g1.IN1
+sw2 => a1.IN1
+sw2 => a1.IN1
+sw2 => a1.IN1
+sw2 => b1.IN1
+sw2 => d1.IN1
+sw3 => a1.IN1
+sw3 => a1.IN1
+sw3 => b1.IN1
+sw3 => b1.IN1
+sw3 => d1.IN1
+sw3 => d1.IN1
+sw3 => e1.IN1
+sw3 => f1.IN1
+sw3 => f1.IN1
+sw3 => g1.IN1
+sw3 => a1.IN1
+sw3 => b1.IN1
+sw3 => b1.IN1
+sw3 => c1.IN1
+sw3 => d1.IN1
+sw3 => d1.IN1
+sw4 => a2.IN0
+sw4 => a2.IN0
+sw4 => b2.IN0
+sw4 => a2.IN0
+sw4 => b2.IN0
+sw4 => e2.IN0
+sw4 => f2.IN0
+sw5 => a2.IN0
+sw5 => a2.IN1
+sw5 => b2.IN1
+sw5 => b2.IN0
+sw5 => a2.IN1
+sw5 => a2.IN1
+sw5 => d2.IN0
+sw6 => a2.IN1
+sw6 => b2.IN1
+sw6 => b2.IN1
+sw6 => c2.IN1
+sw6 => c2.IN1
+sw6 => f2.IN1
+sw6 => g2.IN1
+sw6 => a2.IN1
+sw6 => a2.IN1
+sw6 => a2.IN1
+sw6 => b2.IN1
+sw6 => d2.IN1
+sw7 => a2.IN1
+sw7 => a2.IN1
+sw7 => b2.IN1
+sw7 => b2.IN1
+sw7 => d2.IN1
+sw7 => d2.IN1
+sw7 => e2.IN1
+sw7 => f2.IN1
+sw7 => f2.IN1
+sw7 => g2.IN1
+sw7 => a2.IN1
+sw7 => b2.IN1
+sw7 => b2.IN1
+sw7 => c2.IN1
+sw7 => d2.IN1
+sw7 => d2.IN1
+a1 <= a1.DB_MAX_OUTPUT_PORT_TYPE
+b1 <= b1.DB_MAX_OUTPUT_PORT_TYPE
+c1 <= c1.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= d1.DB_MAX_OUTPUT_PORT_TYPE
+e1 <= e1.DB_MAX_OUTPUT_PORT_TYPE
+f1 <= f1.DB_MAX_OUTPUT_PORT_TYPE
+g1 <= g1.DB_MAX_OUTPUT_PORT_TYPE
+a2 <= a2.DB_MAX_OUTPUT_PORT_TYPE
+b2 <= b2.DB_MAX_OUTPUT_PORT_TYPE
+c2 <= c2.DB_MAX_OUTPUT_PORT_TYPE
+d2 <= d2.DB_MAX_OUTPUT_PORT_TYPE
+e2 <= e2.DB_MAX_OUTPUT_PORT_TYPE
+f2 <= f2.DB_MAX_OUTPUT_PORT_TYPE
+g2 <= g2.DB_MAX_OUTPUT_PORT_TYPE
+
+

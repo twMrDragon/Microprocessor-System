@@ -1,0 +1,141 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "a[2]",
+					"strict" : false
+				},
+				{
+					"name" : "a[1]",
+					"strict" : false
+				},
+				{
+					"name" : "a[0]",
+					"strict" : false
+				},
+				{
+					"name" : "b[2]",
+					"strict" : false
+				},
+				{
+					"name" : "b[1]",
+					"strict" : false
+				},
+				{
+					"name" : "b[0]",
+					"strict" : false
+				},
+				{
+					"name" : "c[2]",
+					"strict" : false
+				},
+				{
+					"name" : "c[1]",
+					"strict" : false
+				},
+				{
+					"name" : "c[0]",
+					"strict" : false
+				},
+				{
+					"name" : "d[2]",
+					"strict" : false
+				},
+				{
+					"name" : "d[1]",
+					"strict" : false
+				},
+				{
+					"name" : "d[0]",
+					"strict" : false
+				},
+				{
+					"name" : "e[2]",
+					"strict" : false
+				},
+				{
+					"name" : "e[1]",
+					"strict" : false
+				},
+				{
+					"name" : "e[0]",
+					"strict" : false
+				},
+				{
+					"name" : "f[2]",
+					"strict" : false
+				},
+				{
+					"name" : "f[1]",
+					"strict" : false
+				},
+				{
+					"name" : "f[0]",
+					"strict" : false
+				},
+				{
+					"name" : "g[2]",
+					"strict" : false
+				},
+				{
+					"name" : "g[1]",
+					"strict" : false
+				},
+				{
+					"name" : "g[0]",
+					"strict" : false
+				},
+				{
+					"name" : "w[2]",
+					"strict" : false
+				},
+				{
+					"name" : "z[2]",
+					"strict" : false
+				},
+				{
+					"name" : "x[2]",
+					"strict" : false
+				},
+				{
+					"name" : "y[2]",
+					"strict" : false
+				},
+				{
+					"name" : "w[1]",
+					"strict" : false
+				},
+				{
+					"name" : "z[1]",
+					"strict" : false
+				},
+				{
+					"name" : "x[1]",
+					"strict" : false
+				},
+				{
+					"name" : "y[1]",
+					"strict" : false
+				},
+				{
+					"name" : "w[0]",
+					"strict" : false
+				},
+				{
+					"name" : "z[0]",
+					"strict" : false
+				},
+				{
+					"name" : "x[0]",
+					"strict" : false
+				},
+				{
+					"name" : "y[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
