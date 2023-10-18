@@ -1,18 +1,19 @@
-library IEEE;
-use IEEE.std_logic_1164.all;
-entity seven_light is
-	port(w,x,y,z : in bit;
-		  a,b,c,d,e,f,g:out bit);
-end seven_light;
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+ENTITY seven_light IS
+	PORT (
+		w, x, y, z : IN BIT;
+		a, b, c, d, e, f, g : OUT BIT);
+END seven_light;
 
-architecture logic_fun of seven_light is
-begin
+ARCHITECTURE logic_fun OF seven_light IS
+BEGIN
 
-a<=(not w and not x and not y and z) or (w and not x and y and z) or (x and not y and not z) or (w and x and not y);
-b<=(not w and x and not y and z) or (x and y and not z) or (w and x and not z) or (w and y and z);
-c<=(not w and not x and y and not z) or (w and x and not z)or (w and x and y);
-d<=(not x and not y and z) or (not w and x and not y and not z)or (x and y and z)or (w and not x and y and not z);
-e<=(not w and z) or(not w and x and not y)or(not x and not y and z);
-f<=(not w and not x and z)or(not w and not x and y) or (not w and y and z)or(w and x and not y);
-g<=(not w and not x  and not y)or (not w and x and y and z);
-end logic_fun;
+	a <= (NOT w AND NOT x AND NOT y AND z) OR (w AND NOT x AND y AND z) OR (x AND NOT y AND NOT z) OR (w AND x AND NOT y);
+	b <= (NOT w AND x AND NOT y AND z) OR (x AND y AND NOT z) OR (w AND x AND NOT z) OR (w AND y AND z);
+	c <= (NOT w AND NOT x AND y AND NOT z) OR (w AND x AND NOT z) OR (w AND x AND y);
+	d <= (NOT x AND NOT y AND z) OR (NOT w AND x AND NOT y AND NOT z) OR (x AND y AND z) OR (w AND NOT x AND y AND NOT z);
+	e <= (NOT w AND z) OR(NOT w AND x AND NOT y) OR (NOT x AND NOT y AND z);
+	f <= (NOT w AND NOT x AND z) OR (NOT w AND NOT x AND y) OR (NOT w AND y AND z) OR (w AND x AND NOT y);
+	g <= (NOT w AND NOT x AND NOT y) OR (NOT w AND x AND y AND z);
+END logic_fun;
