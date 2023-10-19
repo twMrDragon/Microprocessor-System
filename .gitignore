@@ -7,7 +7,6 @@
 # all vhd,qpf,qsf file and db dicetory
 !lab*/
 !lab*/**/
-!lab*/**/db/**
 !lab*/**/*.vhd
 !lab*/**/*.qsf
 !lab*/**/*.qpf
