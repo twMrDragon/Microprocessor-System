@@ -17,93 +17,80 @@
 
 ### 多位元加法器設計
 根據1位元全加器真值表設計邏輯電路。
-<html>
-   <head>
-      <style>
-         td {
-         text-align:center
-         }
-         th {
-         text-align:center
-         }
-      </style>
-   </head>
-   <body>
-      <table>
-         <thead>
-            <tr>
-               <th colspan=3>輸入</th>
-               <th colspan=2>輸出</th>
-            </tr>
-            <tr>
-               <th>cin</th>
-               <th>a</th>
-               <th>b</th>
-               <th>cout</th>
-               <th>s</th>
-            </tr>
-         </thead>
-         <tbody>
-            <tr>
-               <td>0</td>
-               <td>0</td>
-               <td>0</td>
-               <td>0</td>
-               <td>0</td>
-            </tr>
-            <tr>
-               <td>0</td>
-               <td>0</td>
-               <td>1</td>
-               <td>0</td>
-               <td>1</td>
-            </tr>
-            <tr>
-               <td>0</td>
-               <td>1</td>
-               <td>0</td>
-               <td>0</td>
-               <td>1</td>
-            </tr>
-            <tr>
-               <td>0</td>
-               <td>1</td>
-               <td>1</td>
-               <td>1</td>
-               <td>0</td>
-            </tr>
-            <tr>
-               <td>1</td>
-               <td>0</td>
-               <td>0</td>
-               <td>0</td>
-               <td>1</td>
-            </tr>
-            <tr>
-               <td>1</td>
-               <td>0</td>
-               <td>1</td>
-               <td>1</td>
-               <td>0</td>
-            </tr>
-            <tr>
-               <td>1</td>
-               <td>1</td>
-               <td>0</td>
-               <td>1</td>
-               <td>0</td>
-            </tr>
-            <tr>
-               <td>1</td>
-               <td>1</td>
-               <td>1</td>
-               <td>1</td>
-               <td>1</td>
-            </tr>
-         </tbody>
-      </table>
-   </body>
-</html>
+
+<table>
+   <thead>
+      <tr>
+         <th colspan=3>輸入</th>
+         <th colspan=2>輸出</th>
+      </tr>
+      <tr>
+         <th>cin</th>
+         <th>a</th>
+         <th>b</th>
+         <th>cout</th>
+         <th>s</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>0</td>
+         <td>0</td>
+         <td>1</td>
+         <td>0</td>
+         <td>1</td>
+      </tr>
+      <tr>
+         <td>0</td>
+         <td>1</td>
+         <td>0</td>
+         <td>0</td>
+         <td>1</td>
+      </tr>
+      <tr>
+         <td>0</td>
+         <td>1</td>
+         <td>1</td>
+         <td>1</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>1</td>
+         <td>0</td>
+         <td>0</td>
+         <td>0</td>
+         <td>1</td>
+      </tr>
+      <tr>
+         <td>1</td>
+         <td>0</td>
+         <td>1</td>
+         <td>1</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>1</td>
+         <td>1</td>
+         <td>0</td>
+         <td>1</td>
+         <td>0</td>
+      </tr>
+      <tr>
+         <td>1</td>
+         <td>1</td>
+         <td>1</td>
+         <td>1</td>
+         <td>1</td>
+      </tr>
+   </tbody>
+</table>
 
 布林化簡後:<br>
 $s_i=x_i\oplus{y_i}\oplus{cin_i}$<br>
