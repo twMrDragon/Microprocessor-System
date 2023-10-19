@@ -1,1 +1,13 @@
-報告/
+# ignore all file and directory
+*
+
+# gitignore
+!.gitignore
+!README.md
+# all vhd,qpf,qsf file and db dicetory
+!lab*/
+!lab*/**/
+!lab*/**/db/**
+!lab*/**/*.vhd
+!lab*/**/*.qsf
+!lab*/**/*.qpf
