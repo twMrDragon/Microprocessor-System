@@ -3,7 +3,10 @@
 
 # gitignore
 !.gitignore
+
+# readme
 !README.md
+
 # all vhd,qpf,qsf file and db dicetory
 !lab*/
 !lab*/**/
