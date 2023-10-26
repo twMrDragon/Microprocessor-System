@@ -7,8 +7,6 @@
 ## 實驗目的
 
 - 熟悉 Package 與 Component
-- 使用 Package 與 Component 完成 1 位元 BCD 加法器
-- 使用 1 位元全 BCD 加法器完成 2 位元全 BCD 加法器
 
 ## 電路設計
 
