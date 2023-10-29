@@ -1,0 +1,15 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY mux2to1 IS
+	PORT (
+		w1, w0 : IN STD_LOGIC;
+		s : IN STD_LOGIC;
+		f : OUT STD_LOGIC
+	);
+END mux2to1;
+
+ARCHITECTURE func OF mux2to1 IS
+BEGIN
+	f <= (w0 AND NOT s) OR (w1 AND s);
+END func;
