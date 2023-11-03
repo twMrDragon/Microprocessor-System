@@ -50,8 +50,9 @@ PACKAGE lab4_package IS
 			operation : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 			cin : IN STD_LOGIC;
 			result : OUT STD_LOGIC;
-			cout : OUT STD_LOGIC;
-			s : OUT STD_LOGIC
+			cout : INOUT STD_LOGIC;
+			s : OUT STD_LOGIC;
+			overflow : OUT STD_LOGIC
 		);
 	END COMPONENT ALU_MSB;
 
