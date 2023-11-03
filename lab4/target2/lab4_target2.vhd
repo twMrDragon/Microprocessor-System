@@ -36,7 +36,7 @@ BEGIN
 	G2 : FOR i IN 0 TO 6 GENERATE
 		hexStage : hex PORT MAP("000" & resultTemp(i), hexArray(i));
 	END GENERATE;
-	hexOverflowStage : hex PORT MAP("000" & overflowTemp, hexArray(7));
+	hexCout : hex PORT MAP("000" & cTemp(7), hexArray(7));
 
 	--	hex
 	--	hex0Stage : hex PORT MAP(resultTemp(3 DOWNTO 0), hex0);
