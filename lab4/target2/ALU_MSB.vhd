@@ -9,8 +9,9 @@ ENTITY ALU_MSB IS
 		operation : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 		cin : IN STD_LOGIC;
 		result : OUT STD_LOGIC;
-		cout : OUT STD_LOGIC;
-		s : OUT STD_LOGIC
+		cout : INOUT STD_LOGIC;
+		s : OUT STD_LOGIC;
+		overflow : OUT STD_LOGIC
 	);
 END ALU_MSB;
 ARCHITECTURE func OF ALU_MSB IS
@@ -27,4 +28,5 @@ BEGIN
 	FAStage : fullAdd PORT MAP(cin, muxA, muxB, FAResult, cout);
 	muxStage : mux4to1 PORT MAP(setLessThan & FAResult & orResult & andResult, operation(1), operation(0), result);
 	s <= FAResult;
+	overflow <= cin XOR cout;
 END func;
