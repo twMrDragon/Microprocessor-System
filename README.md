@@ -13,5 +13,7 @@ Device: EP4CE115F29C7<br>
 - Lab 3
   - BCD 加法器電路設計
 - Lab 4
-  - 1 bit ALU
-  - 7 bits ALU
+  - 1-bit ALU
+  - 7-bit ALU
+- Lab 5
+  - N 位元左 / 右移位萬用暫存器
