@@ -32,9 +32,9 @@ BEGIN
 	debounceStage : debounce PORT MAP(clk50m, btnClk, debounce_btnClk);
 	myClk <= debounce_btnClk WHEN handOrAuto = '0' ELSE
 		clk50m;
-		
+
 	-- 狀態轉移
-	fsmStage : divisor_fsm_transformer PORT MAP(myClk, clear, w, fsm_state);
+	fsmStage : divisor_fsm_transformer PORT MAP(NOT myClk, clear, w, fsm_state);
 	current_state <= fsm_state;
 
 	-- 七段顯示器輸出	

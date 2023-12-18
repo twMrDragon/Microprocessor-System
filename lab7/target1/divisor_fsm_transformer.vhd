@@ -14,7 +14,7 @@ ARCHITECTURE func OF divisor_fsm_transformer IS
 BEGIN
     PROCESS
     BEGIN
-        WAIT UNTIL clk'EVENT AND clk = '0';
+        WAIT UNTIL clk'EVENT AND clk = '1';
         IF reset = '1' THEN
             state <= Start;
         ELSE
