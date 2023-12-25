@@ -14,6 +14,11 @@ ENTITY target1 IS
 END ENTITY;
 
 ARCHITECTURE func OF target1 IS
+    SIGNAL divisionCount : INTEGER := 0;
+    SIGNAL localRemainder : STD_LOGIC_VECTOR(15 DOWNTO 0);
+    SIGNAL localDivisor : STD_LOGIC_VECTOR(15 DOWNTO 0);
+    SIGNAL localQuotient : STD_LOGIC_VECTOR(7 DOWNTO 0);
+
     TYPE regArray IS ARRAY (NATURAL RANGE <>) OF STD_LOGIC_VECTOR(7 DOWNTO 0);
     SIGNAL reg : regArray(0 TO 3);
     SIGNAL debounce_btnClk : STD_LOGIC;
@@ -49,6 +54,27 @@ BEGIN
                 reg(rs) <= (OTHERS => '0');
                 IF reg(rs) < reg(rt) THEN
                     reg(rs)(0) <= '1';
+                END IF;
+            WHEN "1111" =>
+                IF divisionCount = 0 THEN
+                    divisionCount <= 1;
+                    localRemainder <= (OTHERS => '0');
+                    localRemainder(7 DOWNTO 0) <= reg(rs);
+                    localDivisor <= (OTHERS => '0');
+                    localDivisor(15 DOWNTO 8) <= reg(rt);
+                    localQuotient <= (OTHERS => '0');
+                ELSIF divisionCount = 10 THEN
+                    reg(rs) <= localQuotient;
+                    divisionCount <= 0;
+                ELSE
+                    divisionCount <= divisionCount + 1;
+                    IF localRemainder >= localDivisor THEN
+                        localQuotient <= localQuotient(6 DOWNTO 0) & '1';
+                        localRemainder <= localRemainder - localDivisor;
+                    ELSE
+                        localQuotient <= localQuotient(6 DOWNTO 0) & '0';
+                    END IF;
+                    localDivisor <= '0' & localDivisor(15 DOWNTO 1);
                 END IF;
             WHEN OTHERS =>
                 NULL;
