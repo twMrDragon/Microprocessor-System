@@ -1,15 +1,21 @@
 # ignore all file and directory
 *
 
-# gitignore
+# # gitignore
 !.gitignore
 
-# readme
+# # readme
 !README.md
 
-# all vhd,qpf,qsf file and db dicetory
+# all vhd,qpf,qsf file
 !lab*/
 !lab*/**/
 !lab*/**/*.vhd
 !lab*/**/*.qsf
 !lab*/**/*.qpf
+
+# final project
+!final_project/
+!final_project/*.vhd
+!final_project/*.qsf
+!final_project/*.qpf
